@@ -10,29 +10,29 @@ const playAgainButton = document.getElementById('play-again-button');
 
 // Load assets
 const playerImg = new Image();
-playerImg.src = 'assets/player.png';
+playerImg.src = 'assets/player.webp';
 const mineImg = new Image();
-mineImg.src = 'assets/mine.png';
+mineImg.src = 'assets/mine.webp';
 const detonatorImg = new Image();
-detonatorImg.src = 'assets/detonator.png';
+detonatorImg.src = 'assets/detonator.webp';
 const magnetImg = new Image();
-magnetImg.src = 'assets/magnet.png';
+magnetImg.src = 'assets/magnet.webp';
 const gemImg = new Image();
-gemImg.src = 'assets/gem.png';
+gemImg.src = 'assets/gem.webp';
 const backgroundImg = new Image();
-backgroundImg.src = 'assets/background.png';
+backgroundImg.src = 'assets/background.webp';
 const coinImg = new Image();
-coinImg.src = 'assets/coin.png';
+coinImg.src = 'assets/coin.webp';
 const restartButtonImg = new Image();
-restartButtonImg.src = 'assets/restart_button.png';
+restartButtonImg.src = 'assets/restart_button.webp';
 const gameOverLabelImg = new Image();
-gameOverLabelImg.src = 'assets/game_over_label.png';
+gameOverLabelImg.src = 'assets/game_over_label.webp';
 const youWinLabelImg = new Image();
-youWinLabelImg.src = 'assets/you_win_label.png';
+youWinLabelImg.src = 'assets/you_win_label.webp';
 const soundOnImg = new Image();
-soundOnImg.src = 'assets/sound_on.png';
+soundOnImg.src = 'assets/sound_on.webp';
 const soundOffImg = new Image();
-soundOffImg.src = 'assets/sound_off.png';
+soundOffImg.src = 'assets/sound_off.webp';
 
 // Sound effects
 const mineSound = new Audio('assets/mine.mp3');
@@ -130,7 +130,7 @@ function startGame(withSound) {
     ambientMusic.muted = isMuted;
     
     // Update the toggle button icon to match choice
-    soundToggleButton.src = isMuted ? 'assets/sound_off.png' : 'assets/sound_on.png';
+    soundToggleButton.src = isMuted ? 'assets/sound_off.webp' : 'assets/sound_on.webp';
 
     if (withSound) {
         const playPromise = ambientMusic.play();
@@ -527,7 +527,7 @@ const soundToggleButton = document.getElementById('sound-toggle-button');
 soundToggleButton.addEventListener('click', () => {
     isMuted = !isMuted;
     ambientMusic.muted = isMuted;
-    soundToggleButton.src = isMuted ? 'assets/sound_off.png' : 'assets/sound_on.png';
+    soundToggleButton.src = isMuted ? 'assets/sound_off.webp' : 'assets/sound_on.webp';
     if (!isMuted) {
         const playPromise = ambientMusic.play();
         if (playPromise !== undefined) {
